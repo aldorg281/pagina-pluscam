@@ -1,0 +1,1035 @@
+<html lang="es" class="scroll-smooth">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PLUSCAM | Soluciones Avanzadas en Seguridad e Inteligencia Artificial</title>
+
+    <!-- Tailwind CSS CDN -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts: Inter -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        brand: {
+
+                            emerald: '#00A896',
+
+                            emeraldHover: '#008e7e',
+
+                            navy: '#031D2E',
+
+                            navyLight: '#072A42',
+
+                            dark: '#0F172A',
+
+                            slate: '#F1F5F9'
+
+                        }
+
+                    },
+
+                    fontFamily: {
+
+                        sans: ['Inter', 'sans-serif'],
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    <style>
+
+        .hero-bg {
+
+            background: linear-gradient(135deg, rgba(3, 29, 46, 0.95) 0%, rgba(7, 42, 66, 0.85) 100%), url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+
+        }
+
+        .glow-effect {
+
+            box-shadow: 0 0 25px rgba(0, 168, 150, 0.3);
+
+        }
+
+        .glow-effect-sm {
+
+            box-shadow: 0 0 12px rgba(0, 168, 150, 0.2);
+
+        }
+
+        .tech-card {
+
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+
+        .tech-card:hover {
+
+            transform: translateY(-6px);
+
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, A8, 150, 0.1);
+
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-emerald selection:text-white">
+
+    <!-- 1. TOP BAR SUPERIOR -->
+
+    <div class="bg-brand-navy text-slate-300 text-xs py-2 px-4 border-b border-slate-800 relative z-50">
+
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+
+            <div class="flex items-center gap-6">
+
+                <span class="flex items-center gap-2"><i class="fa-solid font-bold fa-phone text-brand-emerald"></i> Atención Central: <a href="tel:+51949131784" class="text-white hover:text-brand-emerald font-semibold transition">+51 949 131 784</a></span>
+
+                <span class="hidden md:flex items-center gap-2"><i class="fa-solid fa-headset text-brand-emerald"></i> Soporte Técnico Especializado 24/7</span>
+
+            </div>
+
+            <div class="flex items-center gap-6">
+
+                <span class="flex items-center gap-2"><i class="fa-solid fa-truck-fast text-brand-emerald"></i> Cobertura e Instalación Nacional</span>
+
+                <div class="flex items-center gap-3 pl-4 border-l border-slate-700">
+
+                    <a href="#" class="hover:text-brand-emerald transition"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="#" class="hover:text-brand-emerald transition"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                    <a href="#" class="hover:text-brand-emerald transition"><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 2. NAVEGACIÓN PRINCIPAL -->
+
+    <header class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-40 border-b border-slate-100">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+
+                <div class="flex-shrink-0 flex items-center gap-3">
+
+                    <a href="#" class="flex items-center gap-2">
+
+                        <div class="w-10 h-10 bg-brand-navy rounded-lg flex items-center justify-center text-brand-emerald font-black text-2xl tracking-wider shadow-md">
+
+                            P
+
+                        </div>
+
+                        <span class="text-2xl font-black text-brand-navy tracking-tight">PLUS<span class="text-brand-emerald">CAM</span></span>
+
+                    </a>
+
+                </div>
+
+                <!-- Buscador Interactivo Desktop -->
+
+                <div class="hidden lg:flex flex-1 max-w-md mx-8 relative">
+
+                    <input type="text" placeholder="Buscar cámaras 4K, NVR, sensores con IA..." class="w-full bg-slate-100 text-sm pl-10 pr-4 py-2.5 rounded-full border border-transparent focus:border-brand-emerald focus:bg-white focus:outline-none transition">
+
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+
+                </div>
+
+                <!-- Menú Desktop -->
+
+                <nav class="hidden xl:flex items-center gap-8 font-medium text-sm text-slate-700">
+
+                    <a href="#soluciones" class="hover:text-brand-emerald transition">Soluciones</a>
+
+                    <a href="#productos" class="hover:text-brand-emerald transition">Productos</a>
+
+                    <a href="#tecnologia" class="hover:text-brand-emerald transition">Tecnología IA</a>
+
+                    <a href="#nosotros" class="hover:text-brand-emerald transition">Nosotros</a>
+
+                </nav>
+
+                <!-- Botón Contacto WhatsApp -->
+
+                <div class="hidden sm:flex items-center gap-4">
+
+                    <a href="https://wa.me/51949131784?text=Hola%20PLUSCAM,%20requiero%20asesoría%20técnica" target="_blank" class="flex items-center gap-2 bg-brand-emerald text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-brand-emeraldHover transition shadow-lg shadow-brand-emerald/20">
+
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+
+                        <span>WhatsApp Directo</span>
+
+                    </a>
+
+                </div>
+
+                <!-- Mobile Menu Button -->
+
+                <div class="xl:hidden flex items-center">
+
+                    <button id="mobile-menu-btn" class="text-slate-700 hover:text-brand-emerald text-2xl p-2">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+
+            <input type="text" placeholder="Buscar tecnología..." class="w-full bg-slate-100 text-sm px-4 py-2 rounded-lg border border-slate-200 mb-3">
+
+            <a href="#soluciones" class="block text-slate-700 font-medium hover:text-brand-emerald">Soluciones</a>
+
+            <a href="#productos" class="block text-slate-700 font-medium hover:text-brand-emerald">Productos</a>
+
+            <a href="#tecnologia" class="block text-slate-700 font-medium hover:text-brand-emerald">Tecnología IA</a>
+
+            <a href="#nosotros" class="block text-slate-700 font-medium hover:text-brand-emerald">Nosotros</a>
+
+            <a href="https://wa.me/51949131784" target="_blank" class="flex items-center justify-center gap-2 bg-brand-emerald text-white py-3 rounded-lg font-semibold">
+
+                <i class="fa-brands fa-whatsapp text-xl"></i> Contactar WhatsApp (949 131 784)
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- 3. BANNER HERO FUTURISTA -->
+
+    <section class="hero-bg relative text-white py-24 lg:py-32 overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                <div class="space-y-6">
+
+                    <div class="inline-flex items-center gap-2 bg-brand-emerald/20 border border-brand-emerald/40 text-brand-emerald px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+
+                        <i class="fa-solid fa-microchip"></i> Inteligencia Artificial Integrada
+
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+
+                        Ecosistemas de <span class="text-brand-emerald">Videovigilancia</span> Inteligente
+
+                    </h1>
+
+                    <p class="text-slate-300 text-lg max-w-xl font-light">
+
+                        Proteja su empresa e infraestructura con analítica predictiva en tiempo real, visión nocturna a todo color <strong class="text-white font-semibold">ColorVu</strong> y monitoreo ultra HD 4K de alta confiabilidad.
+
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+
+                        <a href="#cotizar" class="inline-flex items-center justify-center gap-2 bg-brand-emerald text-white px-8 py-4 rounded-xl font-bold text-base hover:bg-brand-emeraldHover transition glow-effect">
+
+                            Solicitar Cotización Empresarial
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                        <a href="#productos" class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/20 transition">
+
+                            Explorar Catálogo
+
+                        </a>
+
+                    </div>
+
+                    <!-- Badges -->
+
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-700/60 text-xs sm:text-sm text-slate-300">
+
+                        <div>
+
+                            <div class="text-brand-emerald font-extrabold text-xl sm:text-2xl">99.9%</div>
+
+                            <div>Precisión de IA</div>
+
+                        </div>
+
+                        <div>
+
+                            <div class="text-brand-emerald font-extrabold text-xl sm:text-2xl">4K UltraHD</div>
+
+                            <div>Claridad Nocturna</div>
+
+                        </div>
+
+                        <div>
+
+                            <div class="text-brand-emerald font-extrabold text-xl sm:text-2xl">24/7</div>
+
+                            <div>Soporte Local</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Elemento Visual Interactivo del Hero -->
+
+                <div class="relative">
+
+                    <div class="relative mx-auto max-w-md bg-brand-navy/80 border border-slate-700 p-6 rounded-2xl shadow-2xl backdrop-blur-lg">
+
+                        <div class="flex items-center justify-between border-b border-slate-700 pb-4 mb-4">
+
+                            <div class="flex items-center gap-3">
+
+                                <span class="w-3 h-3 rounded-full bg-red-500 animate-ping"></span>
+
+                                <span class="font-mono text-xs text-brand-emerald font-bold">CAM-01 [LIVE 4K - COLORVU]</span>
+
+                            </div>
+
+                            <span class="text-xs bg-brand-emerald/20 text-brand-emerald px-2 py-0.5 rounded font-mono">AI: ACTIVA</span>
+
+                        </div>
+
+                        <div class="relative rounded-lg overflow-hidden border border-slate-700/50 mb-4">
+
+                            <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" alt="Cámara Inteligente" class="w-full h-56 object-cover">
+
+                            <div class="absolute inset-0 bg-brand-navy/30 pointer-events-none"></div>
+
+                            <!-- Target Overlay simulate AI -->
+
+                            <div class="absolute top-1/4 left-1/3 w-28 h-28 border-2 border-brand-emerald rounded flex flex-col justify-between p-1">
+
+                                <span class="text-[9px] bg-brand-emerald text-brand-navy font-bold px-1 w-max">Persona Detectada 98%</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-2 text-xs font-mono">
+
+                            <div class="bg-slate-800/80 p-2 rounded border border-slate-700/50">
+
+                                <span class="text-slate-400 block">Reconocimiento:</span>
+
+                                <span class="text-white font-bold">Autorizado</span>
+
+                            </div>
+
+                            <div class="bg-slate-800/80 p-2 rounded border border-slate-700/50">
+
+                                <span class="text-slate-400 block">Lectura Placa:</span>
+
+                                <span class="text-white font-bold">ABC-789</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 4. SOLUCIONES INTELIGENTES POR INDUSTRIA -->
+
+    <section id="soluciones" class="py-20 bg-slate-50">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+
+                <h2 class="text-xs font-bold text-brand-emerald uppercase tracking-widest mb-2">Especialización Sectores</h2>
+
+                <p class="text-3xl font-extrabold text-brand-navy sm:text-4xl">Soluciones Específicas por Industria</p>
+
+                <p class="mt-4 text-slate-600">Diseñamos arquitecturas de videovigilancia adaptadas a la complejidad de cada infraestructura empresarial e industrial.</p>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Card 1 -->
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 tech-card flex flex-col justify-between">
+
+                    <div>
+
+                        <div class="w-14 h-14 bg-brand-emerald/10 text-brand-emerald rounded-xl flex items-center justify-center text-2xl mb-6">
+
+                            <i class="fa-solid fa-city"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold text-brand-navy mb-3">Ciudades Seguras</h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+
+                            Sistemas urbanos de alta capacidad con cámaras PTZ de largo alcance, lectura masiva de placas (LPR) y gestión centralizada.
+
+                        </p>
+
+                    </div>
+
+                    <a href="#cotizar" class="text-brand-emerald font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">Saber más <i class="fa-solid fa-chevron-right text-xs"></i></a>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 tech-card flex flex-col justify-between">
+
+                    <div>
+
+                        <div class="w-14 h-14 bg-brand-emerald/10 text-brand-emerald rounded-xl flex items-center justify-center text-2xl mb-6">
+
+                            <i class="fa-solid fa-store"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold text-brand-navy mb-3">Retail y Comercio</h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+
+                            Mapas de calor de tránsito, conteo exacto de clientes, prevención de mermas e integración directa con puntos de venta (POS).
+
+                        </p>
+
+                    </div>
+
+                    <a href="#cotizar" class="text-brand-emerald font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">Saber más <i class="fa-solid fa-chevron-right text-xs"></i></a>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 tech-card flex flex-col justify-between">
+
+                    <div>
+
+                        <div class="w-14 h-14 bg-brand-emerald/10 text-brand-emerald rounded-xl flex items-center justify-center text-2xl mb-6">
+
+                            <i class="fa-solid fa-building-shield"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold text-brand-navy mb-3">Residencial y Condominios</h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+
+                            Control de acceso vehicular inteligente, videoportería IP multisitio y detección perimetral anticipada sin falsas alarmas.
+
+                        </p>
+
+                    </div>
+
+                    <a href="#cotizar" class="text-brand-emerald font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">Saber más <i class="fa-solid fa-chevron-right text-xs"></i></a>
+
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 tech-card flex flex-col justify-between">
+
+                    <div>
+
+                        <div class="w-14 h-14 bg-brand-emerald/10 text-brand-emerald rounded-xl flex items-center justify-center text-2xl mb-6">
+
+                            <i class="fa-solid fa-warehouse"></i>
+
+                        </div>
+
+                        <h3 class="text-xl font-bold text-brand-navy mb-3">Educación y Logística</h3>
+
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+
+                            Protección perimetral térmica para almacenes de gran escala, gestión de patios de carga y control de accesos bio-asistencia.
+
+                        </p>
+
+                    </div>
+
+                    <a href="#cotizar" class="text-brand-emerald font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">Saber más <i class="fa-solid fa-chevron-right text-xs"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 5. CATÁLOGO DE PRODUCTOS DESTACADOS -->
+
+    <section id="productos" class="py-20 bg-white">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+
+                <div>
+
+                    <h2 class="text-xs font-bold text-brand-emerald uppercase tracking-widest mb-2">Equipamiento Profesional</h2>
+
+                    <p class="text-3xl font-extrabold text-brand-navy sm:text-4xl">Cámaras y Dispositivos Destacados</p>
+
+                </div>
+
+                <div class="mt-4 md:mt-0 flex gap-2">
+
+                    <button class="px-4 py-2 bg-brand-navy text-white text-xs font-semibold rounded-lg">Todos</button>
+
+                    <button class="px-4 py-2 bg-slate-100 text-slate-600 hover:bg-slate-200 text-xs font-semibold rounded-lg transition">Cámaras PTZ</button>
+
+                    <button class="px-4 py-2 bg-slate-100 text-slate-600 hover:bg-slate-200 text-xs font-semibold rounded-lg transition">IP / NVR</button>
+
+                    <button class="px-4 py-2 bg-slate-100 text-slate-600 hover:bg-slate-200 text-xs font-semibold rounded-lg transition">Videoporteros</button>
+
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Producto 1 -->
+
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:border-brand-emerald transition group">
+
+                    <div class="relative mb-4 bg-white rounded-lg p-6 flex items-center justify-center h-48 overflow-hidden">
+
+                        <span class="absolute top-2 left-2 bg-brand-emerald text-white text-[10px] font-bold px-2 py-0.5 rounded">4K ULTRA HD</span>
+
+                        <i class="fa-solid fa-camera-rotate text-6xl text-slate-300 group-hover:scale-110 group-hover:text-brand-emerald transition duration-300"></i>
+
+                    </div>
+
+                    <span class="text-xs text-slate-400 font-mono">SERIE PLUS-PTZ-800</span>
+
+                    <h3 class="font-bold text-brand-navy text-base mt-1 mb-2">Domo PTZ 4K con IA y Zoom 42X</h3>
+
+                    <p class="text-xs text-slate-500 mb-4">Seguimiento autoguiado de objetivos y visión nocturna ColorVu hasta 200m.</p>
+
+                    <div class="flex items-center justify-between border-t border-slate-200 pt-3">
+
+                        <span class="text-xs font-semibold text-brand-emerald">Garantía 3 Años</span>
+
+                        <a href="https://wa.me/51949131784?text=Cotizar%20Domo%20PTZ%204K" target="_blank" class="text-xs bg-brand-navy text-white px-3 py-1.5 rounded font-medium hover:bg-brand-emerald transition">Cotizar</a>
+
+                    </div>
+
+                </div>
+
+                <!-- Producto 2 -->
+
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:border-brand-emerald transition group">
+
+                    <div class="relative mb-4 bg-white rounded-lg p-6 flex items-center justify-center h-48 overflow-hidden">
+
+                        <span class="absolute top-2 left-2 bg-brand-navy text-white text-[10px] font-bold px-2 py-0.5 rounded">COLORVU PLUS</span>
+
+                        <i class="fa-solid fa-video text-6xl text-slate-300 group-hover:scale-110 group-hover:text-brand-emerald transition duration-300"></i>
+
+                    </div>
+
+                    <span class="text-xs text-slate-400 font-mono">SERIE PLUS-BULLET-4K</span>
+
+                    <h3 class="font-bold text-brand-navy text-base mt-1 mb-2">Cámara Bullet Exterior 8MP</h3>
+
+                    <p class="text-xs text-slate-500 mb-4">Luz cálida suplementaria, micrófono dual integrado e IP67 anti-intemperie.</p>
+
+                    <div class="flex items-center justify-between border-t border-slate-200 pt-3">
+
+                        <span class="text-xs font-semibold text-brand-emerald">Garantía 3 Años</span>
+
+                        <a href="https://wa.me/51949131784?text=Cotizar%20Bullet%204K" target="_blank" class="text-xs bg-brand-navy text-white px-3 py-1.5 rounded font-medium hover:bg-brand-emerald transition">Cotizar</a>
+
+                    </div>
+
+                </div>
+
+                <!-- Producto 3 -->
+
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:border-brand-emerald transition group">
+
+                    <div class="relative mb-4 bg-white rounded-lg p-6 flex items-center justify-center h-48 overflow-hidden">
+
+                        <span class="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">IP FACIAL</span>
+
+                        <i class="fa-solid fa-door-closed text-6xl text-slate-300 group-hover:scale-110 group-hover:text-brand-emerald transition duration-300"></i>
+
+                    </div>
+
+                    <span class="text-xs text-slate-400 font-mono">SERIE PLUS-INTERCOM-X</span>
+
+                    <h3 class="font-bold text-brand-navy text-base mt-1 mb-2">Videoportero IP Multi-Abonado</h3>
+
+                    <p class="text-xs text-slate-500 mb-4">Apertura mediante reconocimiento facial, tarjeta RFID y App móvil remota.</p>
+
+                    <div class="flex items-center justify-between border-t border-slate-200 pt-3">
+
+                        <span class="text-xs font-semibold text-brand-emerald">Garantía 3 Años</span>
+
+                        <a href="https://wa.me/51949131784?text=Cotizar%20Videoportero%20IP" target="_blank" class="text-xs bg-brand-navy text-white px-3 py-1.5 rounded font-medium hover:bg-brand-emerald transition">Cotizar</a>
+
+                    </div>
+
+                </div>
+
+                <!-- Producto 4 -->
+
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:border-brand-emerald transition group">
+
+                    <div class="relative mb-4 bg-white rounded-lg p-6 flex items-center justify-center h-48 overflow-hidden">
+
+                        <span class="absolute top-2 left-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">NVR DEEP LEARNING</span>
+
+                        <i class="fa-solid fa-server text-6xl text-slate-300 group-hover:scale-110 group-hover:text-brand-emerald transition duration-300"></i>
+
+                    </div>
+
+                    <span class="text-xs text-slate-400 font-mono">SERIE PLUS-NVR-32CH</span>
+
+                    <h3 class="font-bold text-brand-navy text-base mt-1 mb-2">Grabador NVR IA 32 Canales</h3>
+
+                    <p class="text-xs text-slate-500 mb-4">Procesamiento de analítica avanzada, búsqueda por atributos y soporte hasta 40TB.</p>
+
+                    <div class="flex items-center justify-between border-t border-slate-200 pt-3">
+
+                        <span class="text-xs font-semibold text-brand-emerald">Garantía 3 Años</span>
+
+                        <a href="https://wa.me/51949131784?text=Cotizar%20NVR%2032CH" target="_blank" class="text-xs bg-brand-navy text-white px-3 py-1.5 rounded font-medium hover:bg-brand-emerald transition">Cotizar</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 6. TECNOLOGÍA E INNOVACIÓN PLUSCAM -->
+
+    <section id="tecnologia" class="py-20 bg-brand-navy text-white relative overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+
+                <h2 class="text-xs font-bold text-brand-emerald uppercase tracking-widest mb-2">Core Tecnológico</h2>
+
+                <p class="text-3xl font-extrabold sm:text-4xl">Tecnología de Vanguardia PLUSCAM</p>
+
+                <p class="mt-4 text-slate-300">Algoritmos con Deep Learning integrados directamente en el hardware para una respuesta inmediata.</p>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="bg-brand-navyLight border border-slate-700/80 p-6 rounded-xl hover:border-brand-emerald transition">
+
+                    <div class="text-brand-emerald text-3xl mb-4"><i class="fa-solid fa-id-card-clip"></i></div>
+
+                    <h3 class="font-bold text-lg mb-2">Reconocimiento Facial</h3>
+
+                    <p class="text-slate-300 text-sm">Identificación en tiempo real comparando con bases de datos autorizadas o de alerta.</p>
+
+                </div>
+
+                <div class="bg-brand-navyLight border border-slate-700/80 p-6 rounded-xl hover:border-brand-emerald transition">
+
+                    <div class="text-brand-emerald text-3xl mb-4"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+
+                    <h3 class="font-bold text-lg mb-2">Detección Térmica</h3>
+
+                    <p class="text-slate-300 text-sm">Monitoreo de temperatura en subestaciones, prevención de incendios y perímetros oscuros.</p>
+
+                </div>
+
+                <div class="bg-brand-navyLight border border-slate-700/80 p-6 rounded-xl hover:border-brand-emerald transition">
+
+                    <div class="text-brand-emerald text-3xl mb-4"><i class="fa-solid fa-person-burst"></i></div>
+
+                    <h3 class="font-bold text-lg mb-2">Análisis de Conducta</h3>
+
+                    <p class="text-slate-300 text-sm">Detección automática de merodeo, cruce de línea, objetos olvidados y caídas de personas.</p>
+
+                </div>
+
+                <div class="bg-brand-navyLight border border-slate-700/80 p-6 rounded-xl hover:border-brand-emerald transition">
+
+                    <div class="text-brand-emerald text-3xl mb-4"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+
+                    <h3 class="font-bold text-lg mb-2">Cloud Storage Secure</h3>
+
+                    <p class="text-slate-300 text-sm">Respaldos redundantes cifrados en la nube para evidencia crítica e inalterable.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 7. NOSOTROS, TESTIMONIOS Y FORMULARIO -->
+
+    <section id="nosotros" class="py-20 bg-slate-50">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Información Corporativa -->
+
+                <div>
+
+                    <h2 class="text-xs font-bold text-brand-emerald uppercase tracking-widest mb-2">Sobre PLUSCAM</h2>
+
+                    <h3 class="text-3xl font-extrabold text-brand-navy sm:text-4xl mb-6">Líderes en Integración de Seguridad Electrónica</h3>
+
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+
+                        Con años de experiencia en el sector corporativo e industrial, **PLUSCAM** provee equipos homologados, asesoría técnica de ingeniería, instalación certificada y planes de mantenimiento preventivo a nivel nacional.
+
+                    </p>
+
+                    
+
+                    <!-- Testimonio Destacado -->
+
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm mb-6">
+
+                        <div class="flex text-amber-400 mb-3 text-sm">
+
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <p class="text-slate-700 text-sm italic mb-4">"El sistema de analítica e Inteligencia Artificial de PLUSCAM nos permitió optimizar la seguridad de nuestros 12 centros logísticos en el país reduciendo las falsas alarmas a cero."</p>
+
+                        <div class="font-bold text-brand-navy text-sm">— Dirección de Operaciones, Logística del Pacífico</div>
+
+                    </div>
+
+                </div>
+
+                <!-- Formulario de Cotización -->
+
+                <div id="cotizar" class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+
+                    <h3 class="text-2xl font-bold text-brand-navy mb-2">Solicitar Propuesta Técnica</h3>
+
+                    <p class="text-xs text-slate-500 mb-6">Complete el formulario y un especialista en ingeniería le responderá en breve.</p>
+
+                    
+
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Gracias por ponerse en contacto con PLUSCAM. Un asesor lo atenderá a la brevedad.');">
+
+                        <div>
+
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Nombre Completo / Empresa</label>
+
+                            <input type="text" required placeholder="Ej. Corporación Rímac S.A." class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:border-brand-emerald focus:bg-white focus:outline-none transition">
+
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+
+                            <div>
+
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Teléfono / WhatsApp</label>
+
+                                <input type="tel" required placeholder="Ej. 949131784" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:border-brand-emerald focus:bg-white focus:outline-none transition">
+
+                            </div>
+
+                            <div>
+
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Correo Electrónico</label>
+
+                                <input type="email" required placeholder="contacto@empresa.com" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:border-brand-emerald focus:bg-white focus:outline-none transition">
+
+                            </div>
+
+                        </div>
+
+                        <div>
+
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Solución de Interés</label>
+
+                            <select class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:border-brand-emerald focus:bg-white focus:outline-none transition">
+
+                                <option>Cámaras PTZ / Analítica IA</option>
+
+                                <option>Sistema de Videoporteros IP</option>
+
+                                <option>Protección Perimetral / Térmica</option>
+
+                                <option>Proyecto Integral Ciudades / Empresas</option>
+
+                            </select>
+
+                        </div>
+
+                        <div>
+
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Detalle del Proyecto</label>
+
+                            <textarea rows="3" placeholder="Describa cantidad de cámaras, ubicación o requerimientos..." class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:border-brand-emerald focus:bg-white focus:outline-none transition"></textarea>
+
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-emerald text-white font-bold py-3.5 rounded-lg hover:bg-brand-emeraldHover transition shadow-md shadow-brand-emerald/20 text-sm">
+
+                            Enviar Solicitud de Cotización
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 8. PIE DE PÁGINA CORPORATIVO -->
+
+    <footer class="bg-brand-navy text-slate-400 text-sm border-t border-slate-800">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <!-- Columna 1 -->
+
+                <div>
+
+                    <div class="flex items-center gap-2 mb-4">
+
+                        <div class="w-8 h-8 bg-brand-emerald text-white rounded flex items-center justify-center font-black text-xl">P</div>
+
+                        <span class="text-2xl font-black text-white tracking-tight">PLUS<span class="text-brand-emerald">CAM</span></span>
+
+                    </div>
+
+                    <p class="text-xs text-slate-400 mb-6 leading-relaxed">
+
+                        Soluciones tecnológicas avanzadas en seguridad, analítica de video con IA e infraestructura para proyectos corporativos y residenciales.
+
+                    </p>
+
+                    <div class="text-xs space-y-2">
+
+                        <p class="text-white font-bold"><i class="fa-solid fa-shield-halved text-brand-emerald mr-2"></i> Equipos con Certificación Oficial</p>
+
+                        <p class="text-white font-bold"><i class="fa-solid fa-certificate text-brand-emerald mr-2"></i> Garantía Directa de 3 Años</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Columna 2 -->
+
+                <div>
+
+                    <h4 class="text-white font-bold mb-4 text-base">Enlaces Rápidos</h4>
+
+                    <ul class="space-y-2 text-xs">
+
+                        <li><a href="#soluciones" class="hover:text-brand-emerald transition">Soluciones por Industria</a></li>
+
+                        <li><a href="#productos" class="hover:text-brand-emerald transition">Cámaras PTZ y Domos</a></li>
+
+                        <li><a href="#productos" class="hover:text-brand-emerald transition">Sistemas NVR e IP</a></li>
+
+                        <li><a href="#tecnologia" class="hover:text-brand-emerald transition">Reconocimiento Facial e IA</a></li>
+
+                        <li><a href="#cotizar" class="hover:text-brand-emerald transition">Centro de Soporte Técnico</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Columna 3 -->
+
+                <div>
+
+                    <h4 class="text-white font-bold mb-4 text-base">Contacto Directo</h4>
+
+                    <ul class="space-y-3 text-xs">
+
+                        <li class="flex items-start gap-3">
+
+                            <i class="fa-solid fa-phone text-brand-emerald mt-1"></i>
+
+                            <div>
+
+                                <span class="block text-slate-300 font-semibold">Central de Atención:</span>
+
+                                <a href="tel:+51949131784" class="text-white hover:text-brand-emerald text-sm font-bold">+51 949 131 784</a>
+
+                            </div>
+
+                        </li>
+
+                        <li class="flex items-start gap-3">
+
+                            <i class="fa-brands fa-whatsapp text-brand-emerald mt-1 text-base"></i>
+
+                            <div>
+
+                                <span class="block text-slate-300 font-semibold">Atención Inmediata WhatsApp:</span>
+
+                                <a href="https://wa.me/51949131784" target="_blank" class="text-white hover:text-brand-emerald font-bold">949 131 784</a>
+
+                            </div>
+
+                        </li>
+
+                        <li class="flex items-start gap-3">
+
+                            <i class="fa-solid fa-clock text-brand-emerald mt-1"></i>
+
+                            <div>
+
+                                <span class="block text-slate-300 font-semibold">Horario de Atención:</span>
+
+                                <span>Lunes a Sábado: 8:00 AM - 7:00 PM</span>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Columna 4 -->
+
+                <div>
+
+                    <h4 class="text-white font-bold mb-4 text-base">Cobertura Nacional</h4>
+
+                    <p class="text-xs text-slate-400 mb-4">Atendemos proyectos de ingeniería e instalación en todo el territorio nacional.</p>
+
+                    <div class="bg-slate-800/60 p-4 rounded-lg border border-slate-700/60 text-xs">
+
+                        <span class="text-brand-emerald font-bold block mb-1">¿Necesita asistencia inmediata?</span>
+
+                        <p class="text-slate-300 mb-3">Comuníquese con nuestros ingenieros de soporte.</p>
+
+                        <a href="tel:+51949131784" class="inline-block bg-brand-emerald text-white px-3 py-1.5 rounded font-bold hover:bg-brand-emeraldHover transition">Llamar Ahora</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+
+                <p>&copy; 2024 PLUSCAM. Todos los derechos reservados.</p>
+
+                <div class="flex gap-6 mt-4 sm:mt-0">
+
+                    <a href="#" class="hover:text-slate-400">Políticas de Privacidad</a>
+
+                    <a href="#" class="hover:text-slate-400">Términos de Servicio</a>
+
+                    <a href="#" class="hover:text-slate-400">Garantía de Equipos</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Script Menú Mobile -->
+
+    <script>
+
+        const btn = document.getElementById('mobile-menu-btn');
+
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+
+            menu.classList.toggle('hidden');
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+
+Instrucciones de Despliegue e Implementación
+Copie el código HTML completo ubicado en el bloque anterior.
+Cree un archivo llamado index.html en el directorio raíz de su servidor web o hosting.
+Pegue el código y guarde el archivo.
+El sitio web cargará automáticamente de forma responsiva, enlazando directamente al número telefónico y canal de WhatsApp 949 131 784.
+
